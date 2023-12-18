@@ -1,5 +1,7 @@
 package Trash;
 
+import java.util.ArrayList;
+
 public class ArrayPerformance {
     public static void main(String[] args) {
         String series = "";
@@ -21,6 +23,10 @@ public class ArrayPerformance {
             Sbuild.append(ch);
         }
         System.out.println(Sbuild);
+        int[] arr = {4,5,6,7};
+//        ArrayList<>
+        int target = 9;
+
 
     }
 }

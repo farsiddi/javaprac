@@ -1,3 +1,5 @@
+package Trash;
+
 import java.util.HashMap;
 
 public class Check {
@@ -19,6 +21,5 @@ public class Check {
             System.out.println("Character: " + key + ", Frequency: " + charFrequencyMap.get(key));
         }
     }
-
 
 }

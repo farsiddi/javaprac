@@ -9,3 +9,26 @@
 %x - Hexadecimal number (base 16)
 %t - Date/time
 %n - Newline
+
+package Trash;
+
+class Student1 implements Comparable<Student1>{
+    int rollno;
+    String name;
+    int age;
+    Student1(int rollno, String name, int age){
+        this.rollno=rollno;
+        this.name=name;
+        this.age=age;
+    }
+
+    public int compareTo(Student1 st){
+//        if(age==st.age)
+//            return 0;
+//        else if(age>st.age)
+//            return 1;
+//        else
+//            return -1;
+        return this.age-st.age;
+    }
+}
