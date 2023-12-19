@@ -17,6 +17,7 @@ public class MinimumDistBetweenWords {
             }
             if (s2.equals(str[i])) {
                 second_index = i;
+                break;
             }
         }
         System.out.println(second_index - first_index);
