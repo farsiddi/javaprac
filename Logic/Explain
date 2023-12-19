@@ -1,0 +1,35 @@
+public class LongestCommonPrefix {
+    public static String longestCommonPrefix(String[] strs) {
+        if (strs == null || strs.length == 0) {
+            return "";
+        }
+
+        // Find the length of the shortest string in the array
+        int minLength = Integer.MAX_VALUE;
+        for (String str : strs) {
+            minLength = Math.min(minLength, str.length());
+        }
+
+        // Iterate through characters until a mismatch is found
+        StringBuilder commonPrefix = new StringBuilder();
+        for (int i = 0; i < minLength; i++) {
+            char currentChar = strs[0].charAt(i);
+            for (int j = 1; j < strs.length; j++) {
+                if (strs[j].charAt(i) != currentChar) {
+                    // Mismatch found, return the common prefix so far
+                    return commonPrefix.toString();
+                }
+            }
+            commonPrefix.append(currentChar);
+        }
+
+        // All characters match, return the entire common prefix
+        return commonPrefix.toString();
+    }
+
+    public static void main(String[] args) {
+        String[] strings = {"flower", "flow", "flight"};
+        String result = longestCommonPrefix(strings);
+        System.out.println("Longest Common Prefix: " + result);
+    }
+}
