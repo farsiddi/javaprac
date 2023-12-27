@@ -19,8 +19,11 @@ public class MinimumDistBetweenWords {
                 second_index = i;
                 break;
             }
+//            System.out.println("Hello");
         }
         System.out.println(second_index - first_index);
+
+        System.out.println("Faran Siddiqui");
 
     }
 }

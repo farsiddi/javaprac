@@ -15,6 +15,9 @@ public class IsomorphicString {
     public static void main(String[] args) {
         String str1 = "aab";
         String str2 = "xxy";
+        if(str2.length() != str1.length()){
+            return  ;
+        }
 
     }
 }

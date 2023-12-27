@@ -6,7 +6,7 @@ public class ArrayPerformance {
     public static void main(String[] args) {
         String series = "";
 //        Below is not a good approach because each time the new object is created,
-//        then series starts pointing to it, and then the old object is dereferenced
+//        then series starts pointing to it, and then the old object is de-referenced
 //        Memory waste - Time complexity O(n2)
         for (int i = 0; i < 26; i++) {
             char ch = (char) ('a' + i);

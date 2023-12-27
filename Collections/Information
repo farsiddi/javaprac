@@ -1,0 +1,30 @@
+Collections
+
+
+----LISTS----
+Ordered collections | Can contain duplicate elements | zero-based index
+Elements can be accessed by their position in the list
+ex - ArrayList<Products> listOfProducts = new ArrayLists<>();
+     Vector<Products> listOfProducts = new Vector<>();
+     LinkedList<Products> listOfProducts = new LinkedList<>();
+
+----SETS----
+Can't contain duplicate elements
+ex - HashSet<Product> setOfOptions = new HashSet<>();
+     LinkedHashSet<Product> setOfOptions = new LinkedHashSet<>();
+     TreeSet<Product> setOfOptions = new TreeSet<>();
+
+----QUEUES----
+Ordered collection | elements added to the end of the queue and removed from beginning
+es - LinkedList<String> queueOfProduct = new LinkedList<>();
+     PriorityQueue<String> queueOfProduct = new PriorityQueue<>();
+
+ ----MAPS----
+Uses key and value pairs to store data | no duplicate keys but same values
+ex - HashMap<String,String> dictionary = new HashMap<>();
+     TreeMap<String,String> dictionary = new TreeMap<>();
+     LinkedHashMap<String,String> dictionary = new LinkedHashMap<>();
+
+
+
+
