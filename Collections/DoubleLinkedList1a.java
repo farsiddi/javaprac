@@ -59,6 +59,34 @@ public class DoubleLinkedList1a {
 //    public void displayPrevNodeVal(){
 //        Node node = new Node();
 //    }
+public Node findNodeWithValue(int value){
+    Node node = head;
+    while (node != null){
+        if (node.val == value){
+            return node;
+        }
+        node = node.next;
+    }
+//        System.out.println(node.value);
+    return null;
+}
+
+
+    public  void insertAfterValue(int afterValue,int val){
+        Node prev = findNodeWithValue(afterValue);
+        if (prev == null){
+            System.out.println("Does not exist");
+        }
+        Node node = new Node(val);
+        node.next = prev.next;
+        prev.next = node;
+        node.prev = prev;
+        if (node.next != null){
+            node.next.prev = node;
+        }
+    }
+
+
     private class Node{
         private int val;
         private Node next;

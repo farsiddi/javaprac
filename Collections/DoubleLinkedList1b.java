@@ -14,6 +14,8 @@ public class DoubleLinkedList1b {
 
         doublell.display();
 
+        doublell.insertAfterValue(11,555);
+        doublell.display();
 
 
     }
