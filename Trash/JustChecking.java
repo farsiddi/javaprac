@@ -22,5 +22,15 @@ public class JustChecking {
         arr2[1] = 9999;
         System.out.println(Arrays.toString(arr1));
         System.out.println(Arrays.toString(arr2));
-    }
+        String cal = "Hello this is Farhan";
+        System.out.println(cal);
+        cal = "Not this is someone else";
+        System.out.println(cal);
+//        int x = 21;
+//        if (x >= 10){
+//            System.out.println("Hello");
+//        }
+        int[] arr77  = {1,2,3,44};
+        System.out.println(Arrays.toString(arr77));
+     }
 }

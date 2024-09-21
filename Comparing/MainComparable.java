@@ -10,10 +10,10 @@ public class MainComparable {
         rs.add(new Result("Rohan",22,84));
         rs.add(new Result("Ali",20,95));
         Collections.sort(rs);
-//      System.out.println(rs);
-//        for (Result st :rs  ) {
-//            System.out.println(st.marks+" "+st.name+" "+st.rno);
-//        }
+      System.out.println(rs);
+        for (Result st :rs  ) {
+            System.out.println(st.marks+" "+st.name+" "+st.rno);
+        }
         int chec = 32;
         int flag =0;
         for ( Result rf : rs){

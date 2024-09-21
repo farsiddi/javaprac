@@ -3,6 +3,9 @@ package Inheritance;
 public class Main {
     public static void main(String[] args) {
         Box box = new Box(5,7,9);
+//        public void addName(){
+//            System.out.println("Hello");
+//        }
 //        System.out.println(box.l+" "+box.h+" "+ box.w);
 
 //        BoxWeight boxx1 = new BoxWeight();
@@ -19,11 +22,18 @@ public class Main {
 //        System.out.println(boxp.weight);
 //        System.out.println(boxp.cost);
 
-        BoxPrice boxxp = new BoxPrice(2,5,7);
-        System.out.println(boxxp.l);
-        System.out.println(boxxp.h);
-        System.out.println(boxxp.w);
-        System.out.println(boxxp.weight);
-        System.out.println(boxxp.cost);
+//        BoxPrice boxxp = new BoxPrice(2,5,7);
+//        System.out.println(boxxp.l);
+//        System.out.println(boxxp.h);
+//        System.out.println(boxxp.w);
+//        System.out.println(boxxp.weight);
+//        System.out.println(boxxp.cost);
+        BoxWeight box1 = new BoxWeight();
+        System.out.println(box1.l+" "+box1.h+" "+ box1.w+" "+box1.weight);
+
+
     }
+//    public static void addName(){
+//        System.out.println("Hello");
+//    }
 }

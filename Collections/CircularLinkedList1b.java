@@ -9,6 +9,9 @@ public class CircularLinkedList1b {
         circularList.insert(56);
         circularList.insert(89);
         circularList.display();
+        circularList.deletion(89);
+        circularList.display();
 
     }
 }
+

@@ -1,0 +1,28 @@
+Errors represent irrecoverable conditions such as Java virtual machine (JVM) running out of memory, memory leaks, stack overflow errors,
+library incompatibility, infinite recursion, etc. Errors are usually beyond the control of the programmer,
+and we should not try to handle errors.
+
+Exceptions - Something that interrupts the normal flow of the program
+
+Checked Exceptions: Checked exceptions are called compile-time exceptions because these exceptions are checked at compile-time by the compiler.
+
+Unchecked Exceptions: The unchecked exceptions are just opposite to the checked exceptions. The compiler will not check these exceptions at compile time.
+In simple words, if a program throws an unchecked exception, and even if we didn’t handle or declare it, the program would not give a compilation error.
+
+        TRY CATCH
+try - encloses the code that might throw an exception
+        It is used to specify the block where we should place an exception code.
+catch - it is used to handle the exception,is the exceptional handler that handles the type of exception indicated by its argument
+finally - it is used to execute the necessary code whether there is an exception or not
+          always executed when the try block is executed.Good for cleanup code
+For example -x
+try{
+    doing something here that can go wrong
+}catch(ExceptionType exception){
+if the type matches then I will handle it for you
+}finally{
+    this will be executed whatever happens
+}
+throw - it is used to throw the exception explicitly in the code.We cant throw multiple exception at a time.
+throws - it is used to declare the exception.
+         It is always used with the method signature.We can declare multiple exception at a time

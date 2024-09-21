@@ -10,6 +10,7 @@ public class Box {
         this.h=-1;
         this.w=-1;
     }
+//    Cube
     Box(double side){
         this.l= side;
         this.w=side;

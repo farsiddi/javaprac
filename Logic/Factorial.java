@@ -12,12 +12,12 @@ public class Factorial {
         for (int i = n; i >= 1; i--) {
             value = value*i;
         }
-        System.out.println(value);
+//        System.out.println(value);
 //        int[] aa1 = {1,2,4,56,7};
 //        for (int v  : aa1){
 //            System.out.println(v);
 //        }
-//        System.out.println(Check(n));
+        System.out.println(Check(n));
         System.out.println("bus      jbc");
 
 
