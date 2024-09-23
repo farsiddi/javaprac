@@ -1,8 +1,9 @@
 package Inheritance;
 
+//- It is useful for code reusability: reuse attributes and methods of an existing class when you create a new class.
 public class Main {
     public static void main(String[] args) {
-        Box box = new Box(5,7,9);
+        Box box = new Box(5, 7, 9);
 //        public void addName(){
 //            System.out.println("Hello");
 //        }
@@ -29,7 +30,7 @@ public class Main {
 //        System.out.println(boxxp.weight);
 //        System.out.println(boxxp.cost);
         BoxWeight box1 = new BoxWeight();
-        System.out.println(box1.l+" "+box1.h+" "+ box1.w+" "+box1.weight);
+        System.out.println(box1.l + " " + box1.h + " " + box1.w + " " + box1.weight);
 
 
     }

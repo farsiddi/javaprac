@@ -1,0 +1,8 @@
+Lambda Expression
+Stream API
+Date and Time API
+Base64 Encode and decode
+Method and constructor reference
+:: operator
+Default and static methods in interfaces(previously public and abstract methods only)
+Functional Interface - Single abstract method but many defaults and static methods

@@ -1,5 +1,5 @@
 package Polymorphism.Types;
-
+// Static methods cannot be overriden
 import Polymorphism.Career;
 
 public class Main {
@@ -16,6 +16,8 @@ public class Main {
 //        Java determines this using - Dynamic method dispatch
         Goodstudent result2 = new Goodstudent();
         result1.result();
+
+
 
 
     }

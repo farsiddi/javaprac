@@ -16,7 +16,7 @@ public class Box {
         this.w=side;
         this.h=side;
     }
-
+//Cuboid
     Box(double l, double w, double h) {
         this.l = l;
         this.w = w;

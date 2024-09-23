@@ -1,6 +1,6 @@
 package Trash;
 
-public class Months {
+public class MonthsEnums {
     enum Month{
 //        Enums are special data type  that allows you to define a set of named constants.
 //        It provides a way to represent a fixed number of predefined values as a group.
