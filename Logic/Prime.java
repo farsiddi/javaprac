@@ -7,18 +7,18 @@ public class Prime {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
 
-        int count =0;
+        int count = 0;
 
-        for(int i =2;i<num;i++){
-            if (num%i==0){
+        for (int i = 2; i < num; i++) {
+            if (num % i == 0) {
 
-                count=1;
+                count = 1;
                 break;
             }
         }
-        if (count==1){
+        if (count == 1) {
             System.out.println("Not prime");
-        }else {
+        } else {
             System.out.println("isprime");
         }
     }

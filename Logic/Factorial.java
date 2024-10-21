@@ -17,8 +17,8 @@ public class Factorial {
 //        for (int v  : aa1){
 //            System.out.println(v);
 //        }
-        System.out.println(Check(n));
-        System.out.println("bus      jbc");
+//        System.out.println(Check(n));
+        System.out.println(value);
 
 
 

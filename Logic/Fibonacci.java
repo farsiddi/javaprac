@@ -15,8 +15,6 @@ public class Fibonacci {
             a=b;
             b=temp;
             System.out.print(" "+temp);
-
         }
     }
-
 }
