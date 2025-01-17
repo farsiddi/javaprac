@@ -23,15 +23,15 @@ public class Factorial {
 
 
     }
-    static int Check(int num){
-//        System.out.println("function is running" +num);
-        if(num==0){
-            return 1;
-        }
-        num = num * Check(num -1);
-        return num;
-
-
-
-    }
+//    static int Check(int num){
+////        System.out.println("function is running" +num);
+//        if(num==0){
+//            return 1;
+//        }
+//        num = num * Check(num -1);
+//        return num;
+//
+//
+//
+//    }
 }

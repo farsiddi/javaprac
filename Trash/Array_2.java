@@ -14,7 +14,5 @@ public class Array_2 {
     }
     static void change_element(int[] arr){ // arr is pointing to the same array which nums is pointing
         arr[1] = 99;
-
-
     }
 }

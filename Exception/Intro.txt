@@ -1,13 +1,24 @@
 Errors represent irrecoverable conditions such as Java virtual machine (JVM) running out of memory, memory leaks, stack overflow errors,
-library incompatibility, infinite recursion, etc. Errors are usually beyond the control of the programmer,
-and we should not try to handle errors.
+    library incompatibility, infinite recursion, etc. Errors are usually beyond the control of the programmer,
+    and we should not try to handle errors.
+                                            THROWABLE
 
 Exceptions - Something that interrupts the normal flow of the program
 
 Checked Exceptions: Checked exceptions are called compile-time exceptions because these exceptions are checked at compile-time by the compiler.
+    The compiler forces the developer to handle these exceptions, either using a try-catch block or by declaring them in the method signature using throws.
+    Always handle checked exceptions because they indicate recoverable errors, such as missing files or network issues
+    Example - IOException , SQLException , ClassNotFoundException
 
-Unchecked Exceptions: The unchecked exceptions are just opposite to the checked exceptions. The compiler will not check these exceptions at compile time.
-In simple words, if a program throws an unchecked exception, and even if we didn’t handle or declare it, the program would not give a compilation error.
+
+Unchecked Exceptions(Runtime exceptions): The unchecked exceptions are just opposite to the checked exceptions.
+    The compiler will not check these exceptions at compile time. Exceptions that occur at runtime. These are usually programming errors.
+    In simple words, if a program throws an unchecked exception, and even if we didn’t handle or declare it, the program would not give a compilation error.
+    Example - NullPointerException , ArrayIndexOutOfBounsException , ArithmaticException , InputMisMatchException
+When to Handle:
+        Generally, do not handle unchecked exceptions unless it is necessary to recover from specific runtime errors.
+        Instead, focus on preventing them by writing safe and defensive code.
+
 
         TRY CATCH
 try - encloses the code that might throw an exception
@@ -15,14 +26,18 @@ try - encloses the code that might throw an exception
 catch - it is used to handle the exception,is the exceptional handler that handles the type of exception indicated by its argument
 finally - it is used to execute the necessary code whether there is an exception or not
           always executed when the try block is executed.Good for cleanup code
-For example -x
-try{
+    For example -x
+    try{
     doing something here that can go wrong
-}catch(ExceptionType exception){
-if the type matches then I will handle it for you
-}finally{
+    }catch(ExceptionType exception){
+    if the type matches then I will handle it for you
+    }finally{
+    always be executed when the try block is exits
     this will be executed whatever happens
-}
-throw - it is used to throw the exception explicitly in the code.We cant throw multiple exception at a time.
+    good for cleanup code - like closing the file, closing database connection
+    }
+throw - it is used to throw the exception explicitly in the code.We can not throw multiple exception at a time.
 throws - it is used to declare the exception.
          It is always used with the method signature.We can declare multiple exception at a time
+
+** try alone will get a compilation error , if try-with-resource is present then it will not throw any error and it will get compile
