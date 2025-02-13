@@ -6,7 +6,6 @@ public class ReverseNumberHelperFunction {
     static void rev1(int n) {
         if (n == 0) {
             return;
-
         }
         int rem = n % 10;
         sum = sum * 10 + rem;
@@ -17,7 +16,6 @@ public class ReverseNumberHelperFunction {
         rev1(12340);
         System.out.println(sum);
         System.out.println(reverse(567, 0));
-
     }
 
     static int reverse(int n, int reversed) {
@@ -28,5 +26,4 @@ public class ReverseNumberHelperFunction {
         reversed = reversed * 10 + lastDigit;
         return reverse(n / 10, reversed);
     }
-
 }

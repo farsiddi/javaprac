@@ -8,7 +8,7 @@ public class MainComparable {
         ArrayList<Result> rs = new ArrayList<>();
         rs.add(new Result("Faran",23,87));
         rs.add(new Result("Rohan",22,84));
-        rs.add(new Result("Ali",20,95));
+        rs.add(new Result("Allen",20,95));
         Collections.sort(rs);
       System.out.println(rs);
         for (Result st :rs  ) {

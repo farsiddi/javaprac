@@ -17,8 +17,5 @@ public class Main {
         Goodstudent result2 = new Goodstudent();
         result1.result();
 
-
-
-
     }
 }

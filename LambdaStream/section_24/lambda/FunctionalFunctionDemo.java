@@ -21,7 +21,7 @@ public class FunctionalFunctionDemo {
         System.out.println(out1.apply(3));
         System.out.println(out2.apply(3));
 
+        String st = "Alex";
 
     }
-
 }

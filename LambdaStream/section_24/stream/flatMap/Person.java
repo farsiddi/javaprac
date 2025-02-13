@@ -1,5 +1,9 @@
 package LambdaStream.section_24.stream.flatMap;
 
+
+//Consider a scenario where there is this one which have a multiple sub-element - to iterate each sub element we use flatMap
+// element = [[1,2,3,4]  , [,3,4,5,6] ] - flatMap - [1, 2, 3, 4, 3, 4, 5, 6]zl
+
 import java.util.List;
 
 public class Person {

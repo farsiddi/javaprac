@@ -12,6 +12,9 @@ import java.util.stream.Stream;
 //3- Applying a terminal operation that produces a result
 
 // Stream holds no memory | always pull elements from the datasource | LAZY(processes elemnents as needed)
+// Once the stream object is traversed(used a terminal operation once) cannot used again(Gives IllegalStateException)
+// input -> intermediate operations(can have multiple) -> terminal operation -> output
+//              intermediate operations gives a new stream object
 
 public class StreamDemo {
     public static void main(String[] args) {
@@ -22,6 +25,7 @@ public class StreamDemo {
         departmentList.add("Security");
         departmentList.add("Sales");
         departmentList.add("Marketing");
+
 
         Stream<String> departmentStream = departmentList.stream();
         departmentStream.forEach(department -> System.out.println(department));
