@@ -1,0 +1,16 @@
+Inheritance -
+            Class - Supports single inheritance
+            Abstract class - Supports single inheritance
+            Interface - Supports multiple inheritance
+Instantiated -
+            Class - Yes
+            Abstract class - No
+            Interface - No
+Constructorss -
+            Class - Can have
+            Abstract class - Can have
+            Interface - Can not have
+Access Modifiers -
+            Class - Public Private Protected
+            Abstract class - Public Private Protected
+            Interface - By deafult Public only , no other allowed

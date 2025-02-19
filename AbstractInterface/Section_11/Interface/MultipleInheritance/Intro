@@ -1,0 +1,6 @@
+1 -if there is a scenario where a class in extending the same method, having same method signature from a superclass and superinterface
+    then superclass wins in this because the compiler is configured this way
+
+2- If there are two interfaces A and B having same methods and there is another interface AB which extends both A and B
+    then comes a class Z which  implements interface AB and A, then AB will be given preference because it is the most specific case.
+    this goes for both abstract as well as default method
