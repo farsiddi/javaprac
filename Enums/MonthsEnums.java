@@ -1,4 +1,4 @@
-package Trash;
+package Enums;
 
 public class MonthsEnums {
     enum Month{
