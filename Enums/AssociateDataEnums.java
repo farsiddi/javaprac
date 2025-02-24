@@ -10,7 +10,6 @@ public class AssociateDataEnums {
         for (Employee emp : arr) {
             System.out.println("Name- " + emp + " age " + emp.getAge());
         }
-
     }
 
     public enum Employee {

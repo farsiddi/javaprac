@@ -34,7 +34,16 @@ public class StreamDemo {
 
         Stream<String> inputStream = Stream.of("Hello", "how", "boxes", "hen", "chair");
         inputStream.filter(st -> st.toLowerCase().startsWith("h")).forEach(System.out::println);
+        Map<String, String> capitals = new HashMap<>();
+        capitals.put("Karnataka", "Bangalore");
+        capitals.put("Punjab", "Chandigarh");
+        capitals.put("Rajasthan", "Jaipur");
 
+//        Stream str = Stream.of(capitals);
+        Stream<Map.Entry<String, String>> str = capitals.entrySet().stream();
+
+//        str.map(key -> key.getKey()).forEach(System.out::println);
+        str.forEach(state -> System.out.println("State - " + state.getKey() + " and capital - " + state.getValue()));
 
         String[] arr = {"Alex", "Carl", "Mike", "Sam"};
         Stream<String> streamArray = Arrays.stream(arr);

@@ -1,4 +1,4 @@
-package ObjectClass.Clone;
+package ObjecSuperclass.Clone;
 //Clone has protected access.
 //Steps
 //        1-Implement Cloneable interface
