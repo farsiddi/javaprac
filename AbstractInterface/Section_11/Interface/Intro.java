@@ -12,7 +12,7 @@ public interface Intro {
 //    public static String final USERNAME_HERO = "Superman";
 //fields in interfaces are implicitly public, static, and final. You don't need to (and shouldn't) use final explicitly.
 
-    String USERNAME_HERO = "Superman"; //Constants in interfaces are implicitly public, static, and final.
+    String USERNAME_HERO = "Superman"; //Fields in interfaces are implicitly public, static, and final.
 
     //    Interface fields are always but their accessibility depends on the interface's scope.Ex - if interface is having package level scope then its field wont be accessible from outside the package even if the fields are public themselves
     //String name; will throw error because it is not initilized (also variables should be all cap)

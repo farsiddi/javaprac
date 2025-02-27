@@ -9,7 +9,7 @@ public class PassingDataInPrimitiveNonPrimitive {
         int id = 1111;
         System.out.println(id);
         System.out.println(changeId(id));
-//        This Value remains same because its is primitive and
+//        This Value remains same because it is a primitive and
 //        it doesnt affect the state of the variable where the methods is invoked.
         System.out.println(id);
 
