@@ -7,7 +7,7 @@ import java.util.List;
 public class VarDemo {
 
     public static void main(String[] args) {
-        var message = "How are you?"; // variables needs to be initialization
+        var message = "How are you?"; // variables need to be initialization
 //        System.out.println(message);
 //        System.out.println(message.getClass());
         message = "not good"; // Allowed

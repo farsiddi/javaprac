@@ -18,7 +18,7 @@ public class ToStringDemo {
         Set<Human> humanSet = new HashSet<>(humanList);
         System.out.println("printing set");
         System.out.println(humanSet);
-//        Order is different because set doesnt maintain the insertion order.
+//        Order is different because a set doesn't maintain the insertion order.
 
 
     }

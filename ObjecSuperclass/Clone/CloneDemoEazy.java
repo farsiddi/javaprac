@@ -19,7 +19,9 @@ package ObjecSuperclass.Clone;
 public class CloneDemoEazy {
     public static void main(String[] args) {
         Car car1 = new Car("Scorpio", 261);
-        Car car2 = car1; // You thought it is copying object but in reality car2 is pointing to same the object as car1, no new object creation
+        Car car2 = car1; // You thought it was copying an object
+        // but in reality, car2 is pointing to same the object as car1,
+        // no new object creation
         System.out.println(car1.getHorsePower() + " " + car2.getHorsePower());
         car2.setHorsePower(999); // changes the horsePower of both the cars because they are pointing to same object
         System.out.println(car1.getHorsePower() + " " + car2.getHorsePower());
