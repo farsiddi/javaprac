@@ -54,6 +54,9 @@ public class StreamDemo {
 //        stream1.map(str -> str.toUpperCase()).forEach(System.out::println);
 //        stream1.forEach(st -> System.out.println(st));
 
+        List<Integer> integerList = new ArrayList<>(Arrays.asList(1, 2, 4, null, 55, null, 35, 76));
+        integerList.stream().filter(integer -> integer != null).map(integer -> integer + 1).forEach(System.out::println);
+        integerList.stream().filter(Objects::nonNull).map(integer -> integer + 1).forEach(System.out::println);
 
     }
 }
