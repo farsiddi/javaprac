@@ -26,4 +26,8 @@ public class GetClassDemo {
 }
 
 class Person {
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.println("Finalize");
+    }
 }

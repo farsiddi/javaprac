@@ -1,14 +1,19 @@
 package ObjecSuperclass.Clone;
-//Clone has protected access.
-//Steps
-//        1-Implement Cloneable interface
-//        2-Override the clone function
-//        3- Call the clone function
-//        4- Add throws CloneNotSupportedException
-
 
 import java.util.Objects;
 
+/**
+ * Cloning in Java requires explicit implementation since the {@code clone()} method
+ * * has protected access in {@code Object}.
+ *
+ * <p><b>Steps to enable cloning:</b></p>
+ * <ol>
+ *   <li>Implement the {@code Cloneable} interface.</li>
+ *   <li>Override the {@code clone()} method.</li>
+ *   <li>Call the {@code clone()} method to create object copies.</li>
+ *   <li>Declare {@code throws CloneNotSupportedException} in the method signature.</li>
+ * </ol>
+ */
 public class Pizza implements Cloneable {
     private String pizzaName;
     private String pizzaSize;
@@ -66,6 +71,11 @@ public class Pizza implements Cloneable {
         System.out.println(secondOrder.pizzaPrice);
 //        the clone() method does create a completely new object with a different hashCode value, which means it's in a separate memory location.
         System.out.println(firstOrder.equals(secondOrder));
+        System.out.println(firstOrder.hashCode() + "  - " + secondOrder.hashCode());
+        System.out.println(firstOrder == secondOrder); // False
+        System.out.println(firstOrder.equals(secondOrder)); // True - since equals methods is overriden so it compares the fields
+//        Same hashCode() does NOT mean same object.
+//        Two objects can have the same hashCode() if they have identical field values.
 
 
     }
