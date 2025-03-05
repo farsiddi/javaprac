@@ -1,8 +1,10 @@
 package LambdaStream.section_24.lambda;
 
-// Handles the scenerio where it accepts two type of parameter of any data type and return any data type after processing result.
+// Handles the scenario where it accepts two types of parameter of any data type and return any data type after a processing result.
+
 
 import java.util.function.Function;
+import java.util.function.UnaryOperator;
 
 public class FunctionalFunctionDemo {
     public static void main(String[] args) {
@@ -15,13 +17,16 @@ public class FunctionalFunctionDemo {
         System.out.println("chaining method");
 
         Function<Integer, Integer> addValue = num -> num + 3;
-        Function<Integer, Integer> multValue = num -> num * 4;
-        Function<Integer, Integer> out1 = addValue.andThen(multValue);
-        Function<Integer, Integer> out2 = addValue.compose(multValue);
+        Function<Integer, Integer> multiValue = num -> num * 4;
+        Function<Integer, Integer> out1 = addValue.andThen(multiValue);
+        Function<Integer, Integer> out2 = addValue.compose(multiValue);
         System.out.println(out1.apply(3));
         System.out.println(out2.apply(3));
 
         String st = "Alex";
+        Function<String, Integer> strLen = String::length;
+        System.out.println(strLen.apply("Smith"));
 
     }
+
 }

@@ -26,7 +26,7 @@ public class HashCodeDemo {
         String str2 = "Ea";
         System.out.println("Check");
         System.out.println(str1.hashCode());  // 2236
-        System.out.println(str2.hashCode());  // 2236
+        System.out.println(str2.hashCode());  // 22364
         System.out.println(str1.equals(str2));  // false
 
     }

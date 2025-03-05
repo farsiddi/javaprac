@@ -19,7 +19,5 @@ public class RecordDemo {
         for (RecordComponent r : rc) {
             System.out.println(r.toString());
         }
-
-
     }
 }

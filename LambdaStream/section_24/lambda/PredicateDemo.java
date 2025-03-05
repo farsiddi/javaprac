@@ -3,6 +3,7 @@ package LambdaStream.section_24.lambda;
 // Handles the scenerio where it accepts one parameter and return the boolean after processing the input
 
 import java.util.List;
+import java.util.function.IntPredicate;
 import java.util.function.Predicate;
 import java.util.function.UnaryOperator;
 
@@ -31,6 +32,8 @@ public class PredicateDemo {
         UnaryOperator<Integer> un = (num) -> num * num;
         un.apply(4);
 
+        IntPredicate str = input -> input % 2 == 0;  // Same for other functional interface, saves time because of autoboxing
+        System.out.println("value is " + str.test(32));
 
     }
 }
