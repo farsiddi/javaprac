@@ -11,15 +11,6 @@ public class ArrayList1 {
         arr_list.add(21);
         arr_list.add(78);
         arr_list.add(54);
-        System.out.println(arr_list); //we can do that because internally it implements the toString
-        arr_list.set(1,99);
-        System.out.println(arr_list);
-        arr_list.remove(1);
-        System.out.println(arr_list);
-
-        for (int i=0;i<5;i++){
-            arr_list.add(sc.nextInt());
-        }
         System.out.println(arr_list);
         System.out.println("HE");
         System.out.println(arr_list.get(3));

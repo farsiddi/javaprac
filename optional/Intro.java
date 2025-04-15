@@ -1,4 +1,4 @@
-package LambdaStream.section_24.optional;
+package optional;
 
 import java.util.Optional;
 import java.util.Random;

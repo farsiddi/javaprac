@@ -1,6 +1,4 @@
-package LambdaStream.section_24.optional;
-
-import AbstractInterface.InterfaceExtends.A;
+package optional;
 
 import java.util.*;
 

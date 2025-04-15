@@ -6,6 +6,7 @@ import java.util.function.Predicate;
 import java.util.function.UnaryOperator;
 
 public class RecordDemo {
+
     public static void main(String[] args) {
         PersonRecord personRecord = new PersonRecord("alex", 3234);
         System.out.println(personRecord.ssnId() + " " + personRecord.name());
