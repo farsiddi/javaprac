@@ -1,10 +1,11 @@
 package Comparing;
 
-public class Result implements Comparable<Result>{
+public class Result implements Comparable<Result> {
     @Override
     public int compareTo(Result o) {
         return -(this.marks - o.marks);
     }
+
     String name;
     int rno;
     int marks;
