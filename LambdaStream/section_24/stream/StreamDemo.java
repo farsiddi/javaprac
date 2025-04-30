@@ -42,7 +42,7 @@ public class StreamDemo {
 //        Stream str = Stream.of(capitals);
         Stream<Map.Entry<String, String>> str = capitals.entrySet().stream();
 
-//        str.map(key -> key.getKey()).forEach(System.out::println);
+//        str.map(key -> key.getKey()).forEac(System.out::println);
         str.forEach(state -> System.out.println("State - " + state.getKey() + " and capital - " + state.getValue()));
 
         String[] arr = {"Alex", "Carl", "Mike", "Sam"};

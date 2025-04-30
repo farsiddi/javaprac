@@ -9,10 +9,9 @@ public class Check2 {
     public static void main(String[] args) {
 //        System.out.println("This is 2attempt");
         String name = "Farhan";
-        int temp=857;
+        int temp = 857;
 //        Access nn = new Access(32,"Rohan");
 //        int a ;
-
 //
 //        char  c ;
 //         int a = temp.length();

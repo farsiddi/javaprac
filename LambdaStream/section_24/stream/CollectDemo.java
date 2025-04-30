@@ -24,6 +24,7 @@ public class CollectDemo {
                 }
         )).map(String::valueOf).collect(Collectors.joining());
         System.out.println(reverseString);
+
     }
 
 }

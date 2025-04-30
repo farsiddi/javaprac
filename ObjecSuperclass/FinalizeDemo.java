@@ -19,7 +19,7 @@ package ObjecSuperclass;
 
 public class FinalizeDemo {
     public static void main(String[] args) {
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < 1000000; i++) {
             System.out.println(i);
             new Person();
 //            Not even one it invoked or not invoked not gurantee thatswhy it is not recommended(for 10000)
